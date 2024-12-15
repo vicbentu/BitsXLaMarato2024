@@ -28,7 +28,7 @@ try:
             _time = current_time.strftime("%Y-%m-%d %H:%M")
 
             input = preprocess((_time, lat, lon), openMapPredictor)
-            output = model(input).item()*0.85
+            output = model(input).item()
             # print(f"Predicted concentration at {lat}, {lon} at {_time}: {output}")
 
             # df = df.append({
